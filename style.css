@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+    border: 0px ;
+    padding: 0;
+    margin: 0;
+    font-family: dita, sans-serif; 
+}
+body{
+    background: #ebf1f1;
+    color: #00353B;
+}
+#wrapper{
+    margin: 0 auto;
+    width: 1280px;
+}
+.dark{
+    background: #00353B;
+    color: #ebf1f1;
+}
+#darkButton{
+    position: fixed;
+    top: 35px;
+    right: 100px;
+    align-items: center;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-color: #00353B;
+    font-size: 25pt;
+    color: #ebf1f1;
+}
+h1{
+    font-family: industry-inc-base, sans-serif;
+    font-size: 75pt; 
+}
+h2{
+    display: none;
+}
+h3{
+    font-family: industry-inc-base, sans-serif;
+    text-align: center;
+    font-size: 18pt;
+}
+h5{
+    display: none;
+}
+header{
+    padding: 50px 0 25px ;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+nav ul {
+    width: 560px;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+nav a, nav a:visited{
+    font-family: industry-inc-base, sans-serif;
+    text-decoration: none;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #00353B;
+  }
+nav a:hover{
+    font-family: industry-inc-outline, sans-serif;
+}
+nav a.dark, nav a.dark:visited, nav a.dark:hover{
+    color: #ebf1f1;
+  }
+
+section{
+    margin: 25px 0;
+}
+#about, #music, #comp, #contact{
+    padding-bottom: 25px;
+    /* border-bottom: #00353B 2px solid; */
+}
+#aboutContent {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#aboutContent p{
+    padding: 0 10px;
+    width: 20%;
+}
+#aboutContent p:first-of-type{
+    text-align: right;
+}
+#aboutContent img{
+    padding: 0 10px;
+    width: 60%;
+}
+#albumDisplay{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;     
+    padding: 0 0 25px ;
+}
+#albumInfo{
+    line-height: 25px;
+    display: block;
+    width: 480px;
+    margin: auto 0 ;
+}
+#albumInfo ol{
+    padding-left: 35px ;
+}
+
+#albumCover{
+    height: 480px;
+    width: 480px;
+
+    margin: 0 50px;
+}
+#albumSelect{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.albumSelect {
+    font-family: industry-inc-base, sans-serif;
+    font-size: 12pt;
+    border: 2px #00353B solid;
+    padding: 10px;
+    color: #00353B;
+    margin: 0 20px;
+    background: none;
+    min-width: 155px;
+}
+.albumSelect.dark{
+    border: 2px #ebf1f1 solid;
+    color: #ebf1f1;
+}
+.albumSelect:hover{
+    background: #00353B;
+    color: #ebf1f1;
+}
+.albumSelect:hover.dark{
+    color: #00353B;
+    background: #ebf1f1;
+} 
+#compWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#compRules{
+    width: 45%;
+    line-height: 25px;
+}
+#compRules strong{
+    font-family: industry-inc-base, sans-serif;
+}
+#compForm input[type=number]{
+    margin-bottom: 15px;
+}
+#compResult{
+    width: 30%;
+    font-size: 16pt;
+    line-height: 50px;
+    padding: 20px;
+}
+#winningNumber, #userNumber{
+    font-family: dita, sans-serif; 
+}
+#result, #compResult p {
+    font-family: industry-inc-base, sans-serif;
+}
+#compRules p, #compRules form{
+    margin: 15px ;
+}
+#compForm input[type=submit]{
+    display: block;
+}
+#contact img{
+height: 700px;
+width: auto;
+}
+.required{
+    color: tomato;
+}
+#contactStyling{
+    display: flex;
+    justify-content: space-evenly;
+}
+#contact input[type=text], input[type=number] {
+    display: block;
+    width: 300px;
+    margin: 5px;
+    border-radius:10px;
+    padding: 10px;
+    border: #00353B 1px solid;
+
+}
+#contact input[type=text].error, #contact input[type=number].error {
+    border: tomato 2px solid;
+
+}
+fieldset{
+    width: 300px;
+    border: #00353B 1px solid;
+    border-radius:10px;
+    padding: 15px;
+    margin: 5px;
+}
+fieldset.dark{
+    border: #ebf1f1 1px solid;
+}
+#contact input[type=radio]{
+    margin: 5px;
+    padding: 10px;
+}
+input[type=submit]{
+    font-family: industry-inc-base, sans-serif;
+    font-size: 12pt;
+    border-radius:10px;
+    padding: 10px;
+    margin: 5px;
+    color:#ebf1f1;
+    background-color:#00353b;
+}
+input[type=submit].dark{
+    color:#00353B;
+    background-color:#ebf1f1;
+}
+textarea{
+    display: block;
+    width: 400px;
+    margin: 5px;
+    border-radius:10px;
+    padding: 10px;
+    border: #00353B 1px solid;
+}
+textarea.dark{
+    background: white;
+    color: #00353B;
+}
+#formStyling{
+    width: 450px;
+    
+}
+.message{
+    display: none;
+    color: tomato;
+}
+.hide{
+    display: none;
+} 
+.show{
+    display: block;
+}
+.error{
+    border: tomato 2px solid;
+  }
+footer h3{
+    display: none;
+}
+footer{
+    padding: 20px 0 30px ;
+    text-align: center;
+    font-size: 10pt;
+}

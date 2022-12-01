@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- Adobe Font Import -->
+    <link rel="stylesheet" href="https://use.typekit.net/akb0ihh.css">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>SYLVAN ESSO</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+        <h1>SYLVAN ESSO</h1>
+        <nav>
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#comp">Competition</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button id="darkButton" class="darkButton"><i class="bi bi-moon-stars"></i></button>
+        <section id="about">
+            <h3>About</h3>
+            <section id="aboutContent">
+                <h5>Members</h5>
+                <p>Amelia Meath &<br> Nick Sanborn</p>
+                <img src="assets/SE_members.png" alt="Nick Sanborn and Amelia Meath">
+                <p>Electronic pop duo Sylvan Esso has been making music together since 2013 creating hits like “Hey Mami”, “Radio”, and “​Ferris Wheel​”. Sylvan Esso has toured with ODESZA, Flock of Dimes, and Phoebe Bridgers. The duos latest release “No Rules Sandy” was released in August 2022. </p>
+            </section>
+            
+        </section>
+        <section id="music">
+            <h3>Music</h3>
+            <section id="albumDisplay">
+                <img src="assets/album1.png" id="albumCover" alt="">
+                <div id="albumInfo">
+                    <h4 id="albumTitle">Sylvan Esso</h4>
+                    <p>Release Year: <span id="releaseYear">2014</span> </p>
+                    <p>Run Time: <span id="runTime">38 min 16 sec</span></p>
+                    <ol id="trackList">
+                        <li>Hey Mami</li>
+                        <li>Dreamy Bruises</li>
+                        <li>Could I Be</li>
+                        <li>Wolf</li>
+                        <li>Dress</li>
+                        <li>H.S.K.T.</li>
+                        <li>Coffee</li>
+                        <li>Uncatena</li>
+                        <li>Play It Right</li>
+                        <li>Come Down</li>
+                    </ol>
+                </div>
+            </section> 
+            <section id="albumSelect">
+                <h5>Album Selection</h5>
+                    <button value="album1" class="albumSelect">
+                        Sylvan Esso
+                    </button>
+                    <button value="album2" class="albumSelect">
+                        What Now
+                    </button>
+                    <button value="album3" class="albumSelect">
+                        With
+                    </button>
+                    <button value="album4" class="albumSelect">
+                        Free Love
+                    </button>
+                    <button value="album5" class="albumSelect">
+                        No Rules Sandy 
+                    </button>
+            </section>
+        </section>
+        <section id="comp">
+            <h3>Competition</h3>
+            <div id="compWrapper">
+                <section id="compRules">
+                    <h5>Rules</h5>
+                    <p><strong>Win  a dance party with Sylvan Esso</strong></p>
+                    <p>Guess the correct number and be entered into a drawing to have Sylvan Esso DJ an event for you and your family and friends</p>
+                    <form id="compForm">
+                        <label for="num1">Enter a number between 1 and 10<span class="required">*</span></label>                    
+                        <span class="message">Invalid Number</span>
+                        <input type="number" name="num1" id="num1">
+                        <span class="message">Must accept terms and conditions to enter </span>
+                        <input type="checkbox" name="agree" id="agree" >
+                        
+                        <label for="agree" id="agreeLabel" class="checkbox">I agree to the Terms and Conditions<span class="required">*</span></label>
+                        <input type="submit" id="numSubmit" value="Enter">
+                    </form>
+            </section>
+            <section id="compResult">
+                <h5>Results</h5>
+                <span id="result" class="hide" ></span>
+                <p>Your number: <span id="userNumber"></span></p>
+                <p>Winning Number: <span id="winningNumber"></span></p>
+            </section>
+        </div>   
+        </section>
+        <section id="contact">
+            <h3>Contact</h3>
+            <div id="contactStyling">
+                <img src="assets/SE_photo2.png" alt="">
+            <div id="formStyling">
+                <form id="contactForm">
+                <!-- First/Last Name -->
+                <label for="fName">First Name<span class="required">*</span></label>
+                <span class="message ">Please enter your first name</span>
+                <input name="fName" id="fName" type="text" >
+                <label for="lName">Last Name<span class="required">*</span></label>
+                <span class="message">Please enter your last name</span>
+                <input name="lName" id="lName" type="text">
+                <!-- Email -->
+                <label for="email">Email Address<span class="required">*</span></label>
+                <span class="message">Please enter your email address</span>
+                <input name="email" id="email" type="text">
+                <!-- Phone Number -->
+                <label for="pNumber">Phone Number<span class="required">*</span></label>
+                <span class="message">Please enter your phone number</span>
+                <input name="pNumber" id="pNumber" type="number">
+                <!-- Email or Phone Number -->
+                <fieldset >
+                    <legend>Contact me by:<span class="required">*</span></legend>
+                    <input name="comPref" id="byEmail" type="radio" checked>
+                    <label for="byEmail">Email</label>
+                    <input name="comPref" id="byPhone" type="radio" >
+                    <label for="byPhone">Phone</label>
+                </fieldset>
+                <!-- Message -->
+                <label for="message">Message<span class="required">*</span></label>
+                <span class="message">Please add a message</span>
+                <textarea id="message" ></textarea>
+                <!-- Submit -->
+                <input type="submit" id="formSubmit" value="Send"  >
+                </form>
+                <section id="success" class="hide">
+                    <h5>Success Message</h5>
+                    <p><strong>You have successfully submitted the form.<br>Here is the information you sent us:</strong></p>
+                    <p id="successOutput">
+                    </p>
+                </section> 
+            </div>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Footer</h3>
+        <i>Carrillo &copy; 2022</i>
+    </footer>
+    </div> 
+</body>
+</html>
